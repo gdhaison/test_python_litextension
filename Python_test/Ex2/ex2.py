@@ -5,12 +5,12 @@ def get_table_name(url):
     return url.split("/")[-1].replace(".csv", "")
 
 db = MySQLdb.connect(host="localhost",
-                     user="root",
-                     passwd="123456",
-                     db="testdb")
+                     user="user",
+                     passwd="passwd",
+                     db="testdb") # Input your db params
 
 cur = db.cursor()
-url = "/home/vuhaison/Documents/customer3.csv"
+url = "url/example.csv" #input_your_csv_path_here
 name = get_table_name(url)
 fields = list(pd.read_csv(url, nrows=0))
 cur.execute(f"create table {name}(id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY)")
