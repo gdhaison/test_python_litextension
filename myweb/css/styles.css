@@ -1,0 +1,32 @@
+.test h1 {
+  color: red;
+}
+
+body{
+  background-image: url(/images/galaxy.jpg);
+  background-size: contain;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 643px;
+}
+.container{
+  margin-left: 200px;
+  margin-right: 200px; 
+}
+.button{
+  background-color: black;
+  color: red;
+}
+.button :hover{
+  background-color: rgb(58, 50, 50);
+  width: 100px;
+  height: 30px;
+}
+#myCanvas{
+  margin-left: 380px;
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+}
